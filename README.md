@@ -3,4 +3,4 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 
 
 ## LeetCode_Explore
-- [Arrays 101](/Arrays/readme.md)
+- [Arrays 101](/./Arrays/README.md)
