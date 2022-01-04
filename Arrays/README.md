@@ -8,10 +8,10 @@ In addition, the problems have hints which will help you in building up ideas on
 
 After completing this Explore Card on Arrays, you will understand:
 
-What an Array is.
-Basic properties of Arrays.
-Implementing basic Array operations.
-Simple programming techniques with Arrays.
+- What an Array is.
+- Basic properties of Arrays.
+- Implementing basic Array operations.
+- Simple programming techniques with Arrays.
 
 
 ## Problems :
