@@ -40,7 +40,7 @@ After completing this Explore Card on Arrays, you will understand:
 - [Remove Element](/./remove-element)
 
 ## Conclusion
-- [Height Checker](/./Height Checker)
+- [Height Checker](/./height-checker)
 - [Max Consecutive Ones II](/./max-consecutive-ones-ii)
 - [Third Maximum Number](/./third-maximum-number)
 - [Find All Numbers Disappeared in an Array](find-all-numbers-disappeared-in-an-array)
