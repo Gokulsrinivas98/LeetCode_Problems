@@ -1,4 +1,4 @@
-from numpy import array
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         answer = []
