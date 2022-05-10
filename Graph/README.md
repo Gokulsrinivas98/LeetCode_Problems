@@ -4,6 +4,7 @@ Graph is probably the data structure that has the closest resemblance to our dai
 
 ## Disjoint Set
 - [Number of Provinces](/./number-of-provinces)
+- [Graph Valid Tree](/./261-graph-valid-tree)
 
 ## The Depth First Search Algorithm in Graph
 
