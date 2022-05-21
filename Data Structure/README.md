@@ -6,9 +6,9 @@ During the computer programming process, identifying and using the appropriate d
 
 ## Problems :
 ### Data Structure I
--[Contains Duplicate](/./217-contains-duplicate/)
--[Maximum Subarray](/./53-maximum-subarray/)
--[Two Sum](/./1-two-sum/)
--[Merge Sorted Array](/./88-merge-sorted-array)
--[Intersection of two arrays II](/./350-intersection-of-two-arrays-ii)
--[Best Time to Buy and Sell Stock](/./121-best-time-to-buy-and-sell-stock/)
+- [Contains Duplicate](/./217-contains-duplicate/)
+- [Maximum Subarray](/./53-maximum-subarray/)
+- [Two Sum](/./1-two-sum/)
+- [Merge Sorted Array](/./88-merge-sorted-array)
+- [Intersection of two arrays II](/./350-intersection-of-two-arrays-ii)
+- [Best Time to Buy and Sell Stock](/./121-best-time-to-buy-and-sell-stock/)
