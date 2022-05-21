@@ -1,4 +1,4 @@
-# Introductioin
+# Introduction
 Recursion is an important concept in computer science. It is a foundation for many other algorithms and data structures. However, the concept of recursion can be tricky to grasp for many beginners.
 
 Before getting started with this card, we strongly recommend that you complete the binary tree and the stack Explore cards first.
