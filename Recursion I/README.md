@@ -13,3 +13,4 @@ In this Explore card, we answer the following questions:
 ## Problems
 ### Principle of Recursion
 - [Reverse String](/./344-reverse-string/)
+- [Swap Nodes in Pairs](/./24-swap-nodes-in-pairs/)
