@@ -10,11 +10,11 @@ class Solution:
             'M':1000,
         }
         result = 0
-        for i in range(len(s)):
-            if i < (len(s) - 1) and rome[s[i]] < rome[s[i+1]]:
+        for i in range(len(s)-1):
+            if rome[s[i]] < rome[s[i+1]]:
                 result -=rome[s[i]]
             else:
                 result+= rome[s[i]]
-        return result
+        return result+rome[s[-1]]
             
         
