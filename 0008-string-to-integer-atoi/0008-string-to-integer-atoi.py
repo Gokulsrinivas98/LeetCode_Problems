@@ -1,15 +1,15 @@
 class Solution:
     def myAtoi(self, s: str) -> int:
-        s = s.lstrip()
+        # s = s.lstrip()
         if not s: return 0
-        if s[0] not in '-+0123456789 ' or "+-" in s or "-+" in s:
-            return 0 
-#         i = 0
-#         while i < len(s) and s[i] == ' ':
-#             i += 1
+        # if s[0] not in '-+0123456789 ' or "+-" in s or "-+" in s:
+        #     return 0 
+        i = 0
+        while i < len(s) and s[i] == ' ':
+            i += 1
         
-#         if i == len(s) or s[i] not in '+-0123456789':
-#             return 0
+        if i == len(s) or s[i] not in '+-0123456789':
+            return 0
         numbers = ''.join((ch if ch in '-+0123456789' else ' ') for ch in s)
         numbers = numbers.strip().split(' ', 1)[0]
         print(numbers)
