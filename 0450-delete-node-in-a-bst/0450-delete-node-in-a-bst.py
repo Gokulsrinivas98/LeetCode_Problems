@@ -22,14 +22,21 @@ class Solution:
                 return root.right
             elif root.right is None:
                 return root.left
-            
-            successor = self.findSuccessor(root.right)
-            root.val = successor.val
-            root.right = self.deleteNode(root.right,successor.val)
+            else:
+                node = root.right
+                while node.left:
+                    node = node.left
+                root.val = node.val
+                root.right = self.deleteNode(root.right, node.val)
         return root
+                
+#             successor = self.findSuccessor(root.right)
+#             root.val = successor.val
+#             root.right = self.deleteNode(root.right,successor.val)
+#         return root
     
-    def findSuccessor(self,node):
-        current = node
-        while current.left is not None:
-            current = current.left
-        return current
+#     def findSuccessor(self,node):
+#         current = node
+#         while current.left is not None:
+#             current = current.left
+#         return current
