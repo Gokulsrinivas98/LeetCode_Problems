@@ -1,13 +1,14 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        words = s.split(' ')
-        rs = []
-        while words:
-            w = words.pop()
-            if w.strip() == '':
-                continue
-            rs.append(w)
-        return ' '.join(rs)
+        return " ".join(reversed(s.split()))
+        # words = s.split(' ')
+        # rs = []
+        # while words:
+        #     w = words.pop()
+        #     if w.strip() == '':
+        #         continue
+        #     rs.append(w)
+        # return ' '.join(rs)
     
         # rs = []
         # r = []
