@@ -1,5 +1,8 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
+        if len(chars) < 2:
+            return len(chars)
+        
         result = []
         c = 1
         for i in range(1, len(chars)):
