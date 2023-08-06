@@ -8,8 +8,5 @@ class Solution:
         result = []
         n = max(candies)
         for i in candies:
-            if i+extraCandies >= n:
-                result.append(True)
-            else:
-                result.append(False)
+            result.append(i+extraCandies >= n)
         return result
