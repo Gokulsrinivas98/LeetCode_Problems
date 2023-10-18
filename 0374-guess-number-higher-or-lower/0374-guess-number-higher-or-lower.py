@@ -9,6 +9,7 @@ class Solution:
     def guessNumber(self, n: int) -> int:
         left = 0
         right = n
+        mid = n//2
         while left <= right:
             mid = (left + right) >> 1
             if guess(mid) == 0:
