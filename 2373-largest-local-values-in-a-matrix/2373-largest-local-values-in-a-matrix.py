@@ -6,5 +6,6 @@ class Solution:
         for i in range(l1-2):
             max1.append([])
             for j in range(l2-2):
-                max1[i].append(max(max(grid[k][l] for l in range(j,j+3)) for k in range(i,i+3)))
+                # max1[i].append(max(max(grid[k][l] for l in range(j,j+3)) for k in range(i,i+3)))
+                max1[i].append(max(grid[i][j:j+3]+grid[i+1][j:j+3]+grid[i+2][j:j+3]))
         return max1
