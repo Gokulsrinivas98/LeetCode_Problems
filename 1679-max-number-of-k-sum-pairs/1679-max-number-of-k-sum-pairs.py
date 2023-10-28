@@ -3,7 +3,7 @@ class Solution:
         count = 0
         start = 0
         end = len(nums)-1
-        nums.sort()
+        nums = sorted(nums)
         while start < end:
             if nums[start] + nums[end] == k:
                 start += 1
