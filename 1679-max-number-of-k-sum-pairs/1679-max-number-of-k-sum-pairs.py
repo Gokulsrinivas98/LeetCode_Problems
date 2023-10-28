@@ -9,9 +9,10 @@ class Solution:
                 start += 1
                 count += 1
                 end -= 1
-            elif nums[start] + nums[end] < k:
+                continue
+            if nums[start] + nums[end] < k:
                 start += 1
-            elif nums[start] + nums[end] > k:
+            else:
                 end -= 1
         return count
     
