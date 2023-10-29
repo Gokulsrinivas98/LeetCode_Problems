@@ -5,12 +5,14 @@ class Solution:
         end = len(nums)-1
         nums = sorted(nums)
         while start < end:
-            if nums[start] + nums[end] == k:
+            ns = nums[start]
+            ne = nums[end]
+            if ns + ne == k:
                 start += 1
                 count += 1
                 end -= 1
                 continue
-            if nums[start] + nums[end] < k:
+            if ns + ne < k:
                 start += 1
             else:
                 end -= 1
