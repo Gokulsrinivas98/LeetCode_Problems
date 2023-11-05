@@ -26,6 +26,7 @@ class Solution:
                     req_close -= 2
                 else:
                     miss_bracket += 1
-        return req_close + miss_bracket
+        return miss_bracket  + req_close
+                
                     
         
