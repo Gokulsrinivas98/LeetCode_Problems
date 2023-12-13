@@ -9,7 +9,5 @@ class Solution:
 
                 elif i != '#':
                     stack.append(i)
-            t =  ''.join(stack)
-            print(t)
-            return t
+            return  ''.join(stack)
         return removeStars(s) == removeStars(t) 
