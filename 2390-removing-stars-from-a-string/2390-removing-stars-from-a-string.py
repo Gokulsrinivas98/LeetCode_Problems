@@ -3,9 +3,10 @@ class Solution:
         stack = []
         n = len(s)
         for i in s:
-            if i != '*':
-                stack.append(i)
-            else:
+            if i == '*':
                 stack.pop()
+                
+            else:
+                stack.append(i)
         return ''.join(stack)
             
