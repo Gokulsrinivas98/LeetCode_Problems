@@ -7,9 +7,8 @@ class Solution:
 #             if nums[i] == nums[i-1]:
 #                 return True
 #         return False
-        s = sorted(list(set(nums)))
-        nums.sort()
+        s = set(nums)
         
-        if s == nums:
+        if len(s) == len(nums):
             return False
         return True
