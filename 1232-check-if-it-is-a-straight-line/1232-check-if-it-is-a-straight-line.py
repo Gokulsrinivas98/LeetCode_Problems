@@ -1,9 +1,9 @@
 class Solution:
     def checkStraightLine(self, arr: List[List[int]]) -> bool:
-        x,y = arr[0][0],arr[0][1]
-        dx,dy = arr[1][0]-x, arr[1][1]-y
-        n = len(arr)
+        x1,y1 = arr[0]
+        x2,y2 = arr[1]
+        
         for xn,yn in arr:
-            if dx * (yn - y) != dy * (xn - x):
+            if (xn - x2) * (yn - y1) != (yn-y2) * (xn - x1):
                 return False
         return True
