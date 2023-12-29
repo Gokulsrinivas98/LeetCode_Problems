@@ -1,20 +1,33 @@
-
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        answer = []
-        for r in range(3):
-            for c in range(3):
-                block = []
-                for i in range(3):
-                    for j in range(3):
-                        block.append(board[3*r + i][3*c + j])
-                answer.append(block)
-        
-        b2 =  list(map(list, zip(*board)))
-        for i in range(9):
-            if len([s for s in board[i] if s != '.']) != len(set(board[i]))-1  or len([s for s in b2[i] if s != '.']) != len(set(b2[i]))-1 or len([s for s in answer[i] if s != '.']) != len(set(answer[i]))-1:
+        return self.isRowValid(board) and self.isColumnValid(board) and self.isGridValid(board)
+    
+    def isRowValid(self, board):
+        for i in board:
+            if not self.listValid(i):
+                print('row')
                 return False
-                
         return True
-                
+    
+    def isColumnValid(self,board):
+        for i in zip(*board):
+            if not self.listValid(i):
+                print('column')
+                return False
+        return True
+    
+    def isGridValid(self,board):
+        for i in (0,3,6):
+            for j in (0,3,6):
+                llist  = [board[x][y] for x in range(i,i+3) for y in range(j,j+3)]
+                if not self.listValid(llist):
+                    print('grid')
+                    return False
+        return True
         
+    
+    def listValid(self, llist):
+        l = [i for i in llist if i != '.']
+        return len(set(l)) == len(l)
+    
+         
