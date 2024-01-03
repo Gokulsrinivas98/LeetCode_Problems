@@ -14,9 +14,16 @@ class Solution:
             
 #         return res
            
-        m = len(bank)
-        ones = [bank[i].count('1') for i in range(m) if '1' in bank[i]]
-        if len(ones) == 1: return 0 
-        return sum(ones[i] * ones[i-1] for i in range(1, len(ones)))    
+        # m = len(bank)
+        # ones = [bank[i].count('1') for i in range(m) if '1' in bank[i]]
+        # if len(ones) == 1: return 0 
+        # return sum(ones[i] * ones[i-1] for i in range(1, len(ones)))
+        ans = prev = 0
+        for s in bank:
+            c = s.count('1')
+            if c:
+                ans += prev * c
+                prev = c
+        return ans
         
        
