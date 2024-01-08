@@ -7,7 +7,7 @@
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         def rangesum(node):
-            if not node: return 0 
+            if not node: return 0
             count = 0
             if low <= node.val <= high:
                 count += node.val
@@ -15,9 +15,7 @@ class Solution:
                 count += rangesum(node.left)
             if node.val < high:
                 count += rangesum(node.right)
-            
             return count
-        
         return rangesum(root)
     
         
