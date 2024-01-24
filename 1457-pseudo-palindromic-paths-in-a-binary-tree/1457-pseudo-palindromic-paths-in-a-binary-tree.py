@@ -7,19 +7,20 @@
 class Solution:
     def pseudoPalindromicPaths (self, root: Optional[TreeNode]) -> int:
         hashset = set()
-        ans = 0
+        ans = 0 
         
         def check(node,hashset):
             nonlocal ans
-            if not node : return
+            if not node: return
             if node.val in hashset: hashset.remove(node.val)
-            else : hashset.add(node.val)
+            else: hashset.add(node.val)
             
-            if not node.left and not node.right: 
+            if not node.left and not node.right:
                 if len(hashset) <= 1: ans += 1
             
             check(node.left,hashset.copy())
             check(node.right,hashset.copy())
-        
+         
         check(root,hashset)
         return ans
+    
