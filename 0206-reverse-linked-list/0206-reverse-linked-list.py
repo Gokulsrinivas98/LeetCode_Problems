@@ -12,14 +12,3 @@ class Solution:
             curr.next = prev
             prev = curr
         return prev
-            
-        
-#         def rev (start, end, ls):
-#             if start >= end:
-#                 return
-#             ls[start],ls[end] = ls[end],ls[start]
-            
-#             rev(start+1,end-1,ls)
-#         rev(0,len(head)-1,head)
-            
-        
